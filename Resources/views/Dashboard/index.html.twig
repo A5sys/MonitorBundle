@@ -1,0 +1,14 @@
+{% extends "MonitorBundle::template.html.twig" %}
+{% trans_default_domain "monitor" %}
+{% block content %}
+    <h2>{{ 'monitor.logs'|trans }}</h2>
+    <div>
+        <ul>
+            {% for file in files %}
+                <li><a href='{{ path('monitor_day', {filename:file.relativePathname}) }}'>{{ file.relativePathname }}</a></li>
+            {% else %}
+                {{ 'no_monitor_files'|trans }}
+            {% endfor %}
+        <ul>
+    </div>
+{% endblock content %}

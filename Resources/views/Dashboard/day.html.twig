@@ -1,0 +1,14 @@
+{% extends "MonitorBundle::template.html.twig" %}
+
+{% trans_default_domain "monitor" %}
+
+{% block content %}
+    <h2>{{ 'statistics.log_file'|trans({ '%%filename%%' : filename}) }}</h2>
+    {% if configuration.stop %}
+        {% include 'MonitorBundle:Dashboard:request.html.twig' with {'title': 'statistics.without_end'|trans, 'requests': data.withoutEnd, 'class': 'danger'} %}
+    {% endif %}
+    {% if configuration.duration %}
+        {% include 'MonitorBundle:Dashboard:request.html.twig' with {'title': 'statistics.slow_error'|trans, 'requests': data.slowError, 'class': 'danger'} %}
+        {% include 'MonitorBundle:Dashboard:request.html.twig' with {'title': 'statistics.slow_warning'|trans, 'requests': data.slowWarning, 'class': 'warning'} %}
+    {% endif %}
+{% endblock content %}

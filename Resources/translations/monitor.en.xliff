@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="e927d0677c77241b707442314346326278051dd6" resname="date">
+        <source>date</source>
+        <target>Date</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/request.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5d3f344b5bd21e9500c69ca575a3286c85b28f1c" resname="duration">
+        <source>duration</source>
+        <target>Duration</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/request.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="87ea5dfc8b8e384d848979496e706390b497e547" resname="id">
+        <source>id</source>
+        <target>ID</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/request.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="81c5d49be9505089d8d248ea96f6d077fd0ab9bd" resname="memory">
+        <source>memory</source>
+        <target>Memory</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/request.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9749a482eff9af687c9251eeffc96ee907c88d34" resname="monitor.logs">
+        <source>monitor.logs</source>
+        <target>The monitor files</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c3503395f7b9ba6567c5d3001cb457956945bbf5" resname="no_monitor_files">
+        <source>no_monitor_files</source>
+        <target>There is no monitor file</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="62efd02f7fd87bcc67ec6dcf355126a9d74b303d" resname="statistics.log_file">
+        <source>statistics.log_file</source>
+        <target>The monitor file: %%filename%%</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/day.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="df77c95aa8beabb4082eea595ed5d96ec8d862a0" resname="statistics.slow_error">
+        <source>statistics.slow_error</source>
+        <target>The requests that are too slow</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/day.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="86a18b94739b408a85d97159adabb499d1669efd" resname="statistics.slow_warning">
+        <source>statistics.slow_warning</source>
+        <target>The slow requests</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/day.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8776363f39b751d60ef5459dfe09f349ed2f8414" resname="statistics.without_end">
+        <source>statistics.without_end</source>
+        <target>The requests without end</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/day.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="81736358b1645103ae83247b10c5f82af641ddfc" resname="url">
+        <source>url</source>
+        <target>Url</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/request.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="12dea96fec20593566ab75692c9949596833adc9" resname="user">
+        <source>user</source>
+        <target>User</target>
+        <jms:reference-file>/../src/A5sys/MonitorBundle/Resources/views/Dashboard/request.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,22 @@
+{% trans_default_domain "monitor" %}
+<h2>{{ title }}</h2>
+<table class='table-striped table table-bordered table-condensed'>
+    <thead>
+        <td>{{ 'date'|trans }}</td>
+        <td>{{ 'id'|trans }}</td>
+        {% if configuration.user %}<td>{{ 'user'|trans }}</td>{% endif %}
+        {% if configuration.duration %}<td>{{ 'duration'|trans }}</td>{% endif %}
+        {% if configuration.memory %}<td>{{ 'memory'|trans }}</td>{% endif %}
+        {% if configuration.url %}<td>{{ 'url'|trans }}</td>{% endif %}
+    </thead>
+    {% for request in requests %}
+        <tr class='{{ class }}'>
+            <td>{{ request.date|date('Y-m-d H:i:s') }}</td>
+            <td>{{ request.id }}</td>
+            {%if configuration.user %}<td>{{ request.user }}</td>{% endif %}
+            {%if configuration.duration %}<td>{{ request.duration|number_format }} ms</td>{% endif %}
+            {%if configuration.memory %}<td>{{ request.memory|number_format  }} Ko</td>{% endif %}
+            {%if configuration.url %}<td>{{ request.url }}</td>{% endif %}
+        </tr>
+    {% endfor %}
+</table>

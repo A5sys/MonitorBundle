@@ -1,0 +1,30 @@
+parameters:
+    monitor.request_listener.class: "A5sys\\MonitorBundle\\Listener\\RequestListener"
+    monitor.formatter.class: "A5sys\\MonitorBundle\\Formatter\\LogFormatter"
+
+services:
+    monitor.request.listener:
+        class:  "%monitor.request_listener.class%"
+        arguments:
+            - "@security.token_storage"
+            - "@monolog.logger.monitor"
+            - "%monitor.configuration.enable%"
+            - "%monitor.configuration.types%"
+        tags: [{ name: "kernel.event_subscriber"}]
+    monitor.monolog.formatter:
+        class: Monolog\Formatter\LineFormatter
+        arguments:
+            - "[%%datetime%%]|%%message%%\n"
+    monitor.services.monitor_service:
+        class: A5sys\MonitorBundle\Services\MonitorService
+        arguments:
+            - "@monitor.reader.log_reader"
+            - "%monitor.configuration.slow_threshold.warning%"
+            - "%monitor.configuration.slow_threshold.error%"
+    monitor.reader.request_updater:
+        class: A5sys\MonitorBundle\Reader\RequestUpdater
+    monitor.reader.log_reader:
+        class: A5sys\MonitorBundle\Reader\LogReader
+        arguments:
+            - "@monitor.reader.request_updater"
+

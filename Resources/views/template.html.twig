@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.getLocale() }}">
+<head>
+    <link rel="stylesheet" href="/bundles/monitor/lib/bootstrap-3.3.7/bootstrap.min.css">
+    <link rel="stylesheet" href="/bundles/monitor/lib/bootstrap-3.3.7/bootstrap-theme.min.css">
+    <script src="/bundles/monitor/lib/bootstrap-3.3.7/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/bundles/monitor/css/monitor.css">
+</head>
+    <body>
+        <div class='header'>
+            <h1><a href='{{ path('monitor_dashboard') }}'>Monitor</a></h1>
+        </div>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
