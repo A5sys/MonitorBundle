@@ -1,0 +1,12 @@
+{
+    "name": "a5sys/monitor-bundle",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": { "A5sys\\MonitorBundle\\": "" }
+    },
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": ">=2.3"
+    }
+}

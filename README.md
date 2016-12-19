@@ -1,6 +1,6 @@
-# Simple Monitor Bundle #
+# Monitor Bundle #
 
-This bundle gives some simple statistics about the application usage.
+This bundle gives some statistics about the application usage.
 
 You can easily know, day per day:
 
@@ -14,7 +14,7 @@ You can easily know, day per day:
 ## Download ##
 Download the bundle using composer:
 
-	composer require 'a5sys/simple-monitor-bundle'
+	composer require 'a5sys/monitor-bundle'
 
 ## Enable bundle ##
 Enable the bundle in your /app/AppKernel.php:
