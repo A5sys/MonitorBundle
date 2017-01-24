@@ -20,6 +20,10 @@ Download the bundle using composer:
 Enable the bundle in your /app/AppKernel.php:
 
     new A5sys\MonitorBundle\MonitorBundle(),
+    
+Note that you also need to enable the jms-translation bundle:
+
+    new JMS\TranslationBundle\JMSTranslationBundle(),
 
 ## Add channel ##
 Configure the logger:
